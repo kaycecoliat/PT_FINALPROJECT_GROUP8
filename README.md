@@ -1,5 +1,4 @@
-# PT_FINALPROJECT_GROUP8
-Track Attack
+# Track Attack
 
 An interactive Disk Scheduling Simulator written in Python. Enter the head's starting
 position and a queue of cylinder requests, then see how FCFS, SSTF and SCAN serve them:
