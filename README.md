@@ -1,50 +1,67 @@
 # Track Attack
 
-An interactive Disk Scheduling Simulator developed using Python and Tkinter. Enter the disk head's starting position and a queue of cylinder requests, then see how First Come First Serve (FCFS), Shortest Seek Time First (SSTF), and SCAN process them.
-
-The system displays the service sequence, a step-by-step computation table, and a bar chart comparing the total head movement of each disk scheduling algorithm and also the Algorithm information.
-
-## Features
-
-- **FCFS (First Come First Serve):** Processes requests in the order they arrive.
-- **SSTF (Shortest Seek Time First):** Selects the closest pending cylinder request.
-- **SCAN (Elevator Algorithm):** Moves the disk head in one direction before reversing at the disk boundary.
-- **Service Sequence:** Displays the order of processed cylinder requests.
-- **Computation Table:** Shows step-by-step head movement calculations.
-- **Bar Chart Comparison:** Visually compares the total head movement of all three algorithms.
-- **Input Validation:** Checks user inputs before performing the simulation.
+An interactive **disk scheduling simulator** written in Python (tkinter). Enter the head's starting
+position and a queue of cylinder requests, then see how **FCFS**, **SSTF** and **SCAN** serve them:
+the service sequence, a step-by-step computation table, and a bar chart comparing total head movement.
 
 ## Requirements
 
--**Python 3.8 or newer:**
--**Tkinter** (included with Python on Windows and macOS; on Ubuntu/Debian run "sudo apt install python3-tk")
+- Python 3.8 or newer
+- tkinter (included with Python on Windows and macOS; on Ubuntu/Debian run `sudo apt install python3-tk`)
 
 No other packages are needed.
 
 ## Run
 
-Clone the repository:
-
+```bash
 git clone <your-repository-url>
-
-Open the project folder:
-
 cd track-attack
-
-Run the application:
-
 python src/frontend.py
+```
 
-On Windows, you can also use:
+On Windows you can also use `py src/frontend.py`.
 
-py src/frontend.py
+## Run the tests
 
-## Run the Tests
-
-Execute the automated tests:
-
+```bash
 python -m unittest discover -s tests -t . -v
+python -m tests.generate_test_report      # rewrites docs/TEST_REPORT.md
+```
 
-Generate the test report:
+## Repository layout
 
-python -m tests.generate_test_report
+```
+track-attack/
+├── src/
+│   ├── backend.py               # input validation + FCFS, SSTF, SCAN algorithms
+│   └── frontend.py              # tkinter user interface
+├── tests/
+│   ├── cases.py                 # test cases with hand-calculated expected results
+│   ├── test_fcfs.py
+│   ├── test_sstf.py
+│   ├── test_scan.py
+│   ├── test_validation.py
+│   └── generate_test_report.py  # writes docs/TEST_REPORT.md
+└── docs/
+    ├── USER_GUIDE.md            # how to run, inputs, reading the output
+    ├── TEST_REPORT.md           # automated tests: expected vs actual
+    ├── MANUAL_TESTS.md          # GUI test cases with screenshots
+    ├── GITHUB_GUIDE.md          # team workflow and commit plan
+    └── screenshots/
+```
+
+## Documentation
+
+- [User guide](docs/USER_GUIDE.md)
+- [Test report](docs/TEST_REPORT.md) and [manual GUI tests](docs/MANUAL_TESTS.md)
+- [GitHub workflow and commit plan](docs/GITHUB_GUIDE.md)
+
+## Team
+
+| Role | Name | GitHub username | Responsibility |
+|---|---|---|---|
+| Leader | | | Repository, README, merging pull requests, final release |
+| Backend 1 | | | `src/backend.py`, shared test cases, FCFS and SSTF tests |
+| Backend 2 | | | SCAN and validation tests, test report generator |
+| Frontend 1 | | | `src/frontend.py` |
+| Frontend 2 | | | User guide, manual GUI tests, screenshots |
