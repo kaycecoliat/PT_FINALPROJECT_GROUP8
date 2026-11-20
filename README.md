@@ -59,9 +59,9 @@ track-attack/
 ## Team
 
 | Role | Name | GitHub username |
-|---|---|---|---|
-| Project Manager/ Fullstack Developer | Kayce Coliat | kayce-coliat |
+|---|---|---|
+| Project Manager / Fullstack Developer | Kayce Coliat | kayce-coliat |
 | Backend 1 | Kenneth Aclan | knnthaclan-cloud |
-| Backend 2 | Princess Nicole Mago | magoprincessnicole| 
-| Frontend 1 |James Bryan De Guzman | jamesbryandeguzman5-spec |
+| Backend 2 | Princess Nicole Mago | magoprincessnicole |
+| Frontend 1 | James Bryan De Guzman | jamesbryandeguzman5-spec |
 | Frontend 2 | Anne Jeline Dimaano | dimaanoannejeline |
