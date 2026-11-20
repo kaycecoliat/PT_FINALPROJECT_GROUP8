@@ -52,8 +52,8 @@ track-attack/
 
 ## Documentation
 
-- [User guide](docs/USER_GUIDE.md)
-- [Test report](docs/TEST_REPORT.md) and [manual GUI tests](docs/MANUAL_TESTS.md)
+- [USER_GUIDE.md](docs/USER_GUIDE.md)
+- [TEST_REPORT.md](docs/TEST_REPORT.md) and [MANUAL_TESTS.md](docs/MANUAL_TESTS.md)
 - [GitHub workflow and commit plan](docs/GITHUB_GUIDE.md)
 
 ## Team
