@@ -4,24 +4,24 @@ An interactive Disk Scheduling Simulator developed using Python and Tkinter. Ent
 
 The system displays the service sequence, a step-by-step computation table, and a bar chart comparing the total head movement of each disk scheduling algorithm and also the Algorithm information.
 
-#Features
+## Features
 
-- FCFS (First Come First Serve) – Processes requests in the order they arrive.
-- SSTF (Shortest Seek Time First) – Selects the closest pending cylinder request.
-- SCAN (Elevator Algorithm) – Moves the disk head in one direction before reversing at the disk boundary.
-- Service Sequence – Displays the order of processed cylinder requests.
-- Computation Table – Shows step-by-step head movement calculations.
-- Bar Chart Comparison – Visually compares the total head movement of all three algorithms.
-- Input Validation – Checks user inputs before performing the simulation.
+- **FCFS (First Come First Serve):** Processes requests in the order they arrive.
+- **SSTF (Shortest Seek Time First):** Selects the closest pending cylinder request.
+- **SCAN (Elevator Algorithm):** Moves the disk head in one direction before reversing at the disk boundary.
+- **Service Sequence:** Displays the order of processed cylinder requests.
+- **Computation Table:** Shows step-by-step head movement calculations.
+- **Bar Chart Comparison:** Visually compares the total head movement of all three algorithms.
+- **Input Validation:** Checks user inputs before performing the simulation.
 
-#Requirements
+## Requirements
 
-- Python 3.8 or newer
-- Tkinter (included with Python on Windows and macOS; on Ubuntu/Debian run "sudo apt install python3-tk")
+-**Python 3.8 or newer:**
+-**Tkinter** (included with Python on Windows and macOS; on Ubuntu/Debian run "sudo apt install python3-tk")
 
 No other packages are needed.
 
-#Run
+## Run
 
 Clone the repository:
 
@@ -39,7 +39,7 @@ On Windows, you can also use:
 
 py src/frontend.py
 
-#Run the Tests
+## Run the Tests
 
 Execute the automated tests:
 
