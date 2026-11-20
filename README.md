@@ -58,10 +58,10 @@ track-attack/
 
 ## Team
 
-| Role | Name | GitHub username | Responsibility |
+| Role | Name | GitHub username |
 |---|---|---|---|
-| Leader | | | Repository, README, merging pull requests, final release |
-| Backend 1 | | | `src/backend.py`, shared test cases, FCFS and SSTF tests |
-| Backend 2 | | | SCAN and validation tests, test report generator |
-| Frontend 1 | | | `src/frontend.py` |
-| Frontend 2 | | | User guide, manual GUI tests, screenshots |
+| Project Manager/ Fullstack Developer | Kayce Coliat | kayce-coliat |
+| Backend 1 | Kenneth Aclan | knnthaclan-cloud |
+| Backend 2 | Princess Nicole Mago | magoprincessnicole| 
+| Frontend 1 |James Bryan De Guzman | jamesbryandeguzman5-spec |
+| Frontend 2 | Anne Jeline Dimaano | dimaanoannejeline |
