@@ -15,7 +15,7 @@ No other packages are needed.
 
 ```bash
 git clone <your-repository-url>
-cd track-attack
+cd PT_FINALPROJECT_GROUP8
 python src/frontend.py
 ```
 
@@ -31,30 +31,35 @@ python -m tests.generate_test_report      # rewrites docs/TEST_REPORT.md
 ## Repository layout
 
 ```
-track-attack/
-├── src/
-│   ├── backend.py               # input validation + FCFS, SSTF, SCAN algorithms
-│   └── frontend.py              # tkinter user interface
+PT_FINALPROJECT_GROUP8/
+├── README.md
+├── .gitignore               
+├── requirements.txt            
+├── Mago/
+│   ├── assets/               
+│       ├── login_bg.jpg             # backgroud image
+│       ├── title_font.otf           # title font
+├──src/ 
+    ├── backend.py                   # input validation + FCFS, SSFT, SCAN
+    ├── frontend.py                  # tkinter user interface
 ├── tests/
-│   ├── cases.py                 # test cases with hand-calculated expected results
+│   ├── __init__.py          
+│   ├── cases.py                     # test cases with expected results
 │   ├── test_fcfs.py
 │   ├── test_sstf.py
 │   ├── test_scan.py
 │   ├── test_validation.py
-│   └── generate_test_report.py  # writes docs/TEST_REPORT.md
-└── docs/
-    ├── USER_GUIDE.md            # how to run, inputs, reading the output
-    ├── TEST_REPORT.md           # automated tests: expected vs actual
-    ├── MANUAL_TESTS.md          # GUI test cases with screenshots
-    ├── GITHUB_GUIDE.md          # team workflow and commit plan
-    └── screenshots/
+│   ├── generate_test_report.py      # write docs/TEST_REPORT.md
+├── docs/
+    ├── USER_GUIDE.md                # how to run, inputs, reading the output
+    ├── TEST_REPORT.md               # automated tests; expected vs actual
+    ├── MANUAL_TEST.md               # GUI test cases 
 ```
 
 ## Documentation
 
 - [USER_GUIDE.md](docs/USER_GUIDE.md)
 - [TEST_REPORT.md](docs/TEST_REPORT.md) and [MANUAL_TESTS.md](docs/MANUAL_TESTS.md)
-- [GitHub workflow and commit plan](docs/GITHUB_GUIDE.md)
 
 ## Team
 
